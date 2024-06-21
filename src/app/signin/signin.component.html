@@ -1,0 +1,18 @@
+<div class="container-fluid mt-5">
+    <div class="row col-lg-4 col-11 shadow px-3 py-4 col-11 mx-auto ">
+        <p class="fs-1 text-primary text-center justify-content-center"> <u>Student Registration Page</u></p>
+      <form action="" #formone="ngForm">  
+        <input type="text" class="form-control mx-auto my-2" placeholder="First Name" [(ngModel)]= "firstName" name="firstname" >
+       
+        
+        <input  class="form-control mx-auto my-2" type="text" placeholder="Last Name" [(ngModel)]= "lastName" name="lastname">
+        
+        <input  class="form-control mx-auto my-2" type="text" placeholder="username" [(ngModel)]= "userName" name="userName"    >
+        
+        <input class="form-control mx-auto my-2" type="password" placeholder="password" [(ngModel)]= "password" name="password">
+        
+        <button (click)="signUp()" [disabled]="formone.invalid" class="btn btn-primary w-100" > REGISTER </button>
+        <div class="text-danger"> {{message}} </div>
+       </form>
+    </div>
+</div>
