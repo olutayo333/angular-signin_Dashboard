@@ -15,6 +15,9 @@ export class DashboardComponent {
 
     this.user= JSON.parse(localStorage.getItem('students_data')!);
     console.log(this.user);
-    
+    //let match = this.user.match("olutayo");
+    //console.log(match);
+   // let result = taskarray.filter(u=>(u.name.toLowerCase().match(search.toLowerCase())))
+    //let match = this.user.filter(u=>(u.name.toLowerCase()))
   }
 }
